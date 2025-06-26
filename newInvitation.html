@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nişan Davetiyesi</title>
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Crimson+Text&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+
+<body>
+    <div class="container">
+        <h1>Nişan törenimiz</h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-text">
+                <p class="names">Begüm</p>
+                <span class="and">&</span>
+                <p class="names Furkan">Furkan</p>
+                <p class="date">22 Eylül 2025 - Saat 15:00</p>
+            </div>
+            <div class="header-img">
+                <img src="./image/Begum & Furkan.jpg" alt="Begüm & Furkan">
+            </div>
+        </header>
+    </div>
+
+        <div class="quote">
+            <div class="container">
+            <blockquote>
+                <p>We wish our loved ones to be with us at the first step of this beautiful path we are on together.
+                    On
+                    this
+                    special day when we have decided to combine our lives, we would like to share our excitement and
+                    happiness with you. We would be very happy if you could join us at our engagement ceremony.
+                </p>
+                <cite><p>With love, <br>Begum & Furkan</p></cite>
+            </blockquote>
+            </div>
+        </div>
+
+        <!-- Info + Countdown -->
+        <div class="container">
+        <section class="info-section">
+            <section class="info">
+                <h2>Tarih:</h2>
+                <p><time datetime="2025-09-22">22 Eylül 2025</time></p>
+                <h2>Saat:</h2>
+                <p><time datetime="15:00:00">15:00</time></p>
+                <address>
+                    <h2>Adres:</h2>
+                    <p>Muratpaşa Mah. 2.,</p>
+                    <p>Sk. No:10,</p>
+                    <p>Edirne</p>
+                    <a href="https://maps.google.com" target="_blank"><button>Google
+                            Maps'te
+                            Aç</button></a>
+                </address>
+            </section>
+            <section class="countdown-box" id="countdown">
+                <h2>Görüşmeye</h2>
+                <div class="timer">
+                    <div class="cntDown">
+                        <p class="timeStamp" id="day">XX</p>
+                        <p class="timeName">gün</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="hour">XX</p>
+                        <p class="timeName">saat</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="min">XX</p>
+                        <p class="timeName">dakika</p>
+                    </div>
+                    <p>:</p>
+                    <div class="cntDown">
+                        <p class="timeStamp" id="sec">XX</p>
+                        <p class="timeName">saniye</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </div>
+
+        <!-- Form -->
+        
+        <section class="form-section">
+            <div class="container">
+            <h2>Katılım Formu</h2>
+            <form action="form.php" method="POST">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your first name">
+
+                <label for="surname">Soyadınız:</label>
+                <input type="text" id="surname" name="surname" required placeholder="Enter your first name">
+
+                <label for="countOfPeople">Kaç kişi olacaksınız?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="countOfPeople" value="1"> 1</label>
+                    <label><input type="radio" name="countOfPeople" value="2"> 2</label>
+                    <label><input type="radio" name="countOfPeople" value="3"> 3</label>
+                </div>
+
+                <button type="submit">Gönder</button>
+            </form>
+            </div>
+        </section>
+        
+
+        <!-- QR Code -->
+        <div class="container">
+        <section class="qr">
+            <p>If you would like to submit a little donation to us, <br>
+                please scan this QR code
+            </p>
+            <img src="./image/QR code.jpg" alt="QR Code">
+        </section>
+        </div>
+
+        <!-- Contact -->
+        <section class="contact-info">
+            <h2>İletişim:</h2>
+            <div class="contact">
+                <div class="contacts">
+                    <p>Begüm Gürses</p>
+                    <p>
+                    <address>+90 (123) 456-789</address>
+                    </p>
+                </div>
+
+                <div class="contacts">
+                    <p>Furkan Berber</p>
+                    <p>
+                    <address>+90 (123) 456-789</address>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Countdown JS -->
+    <script src=timer.js charset="utf-8""></script>
+
+</body>
+
+</html>
